@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/login_background"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng ký"
+        android:textColor="#965BA0"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Tên tài khoản"
+        android:background="@drawable/background_grey"
+        android:backgroundTint="#EFC9FA"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:background="@drawable/background_grey"
+        android:backgroundTint="#EFC9FA"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        android:background="@drawable/background_grey"
+        android:backgroundTint="#EFC9FA"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtRepeatPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"
+        android:background="@drawable/background_grey"
+        android:backgroundTint="#EFC9FA"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/txtRepeatPassword"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:textSize="5dp"
+        android:textColor="#FF0000"/>
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Đăng ký"
+        android:textSize="20dp"
+        android:background="@drawable/background_grey"
+        app:backgroundTint="#A76BB7"/>
+</LinearLayout>
